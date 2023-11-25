@@ -1,0 +1,925 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Primary Meta Tags -->
+    <title>idox.ai</title>
+    <meta name="title" content="idox.ai" />
+    <meta name="description" content="AI powered document compliance solution" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="idox.ai" />
+    <meta property="og:description" content="AI powered document compliance solution" />
+    <meta property="og:image" content="https://i.ibb.co/sKJSzCP/Screenshot-2023-11-25-134822.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="idox.ai" />
+    <meta property="twitter:description" content="AI powered document compliance solution" />
+    <meta property="twitter:image" content="https://i.ibb.co/sKJSzCP/Screenshot-2023-11-25-134822.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <title>idox.ai</title>
+    <link rel="icon" href="./assets/images/ai-img-rounded.webp">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-light-black overflow-x-hidden">
+    <!-- -----preloader--------- -->
+    <div id="preloader"
+        class="min-vh-100 align-items-center justify-content-center d_flex bg-black position-fixed top-0 start-0 w-100 z-10">
+        <div class="loader">
+            <span class="color-white fs-1">LOADING...</span>
+        </div>
+    </div>
+    <!-- ---------------back to top ------------------- -->
+    <div id="backtop" class="position-fixed cursor-point" onclick="backToTop()"><img class="w-100 btn-top"
+            src="assets/images/backtotop.png" alt="back to top icon">
+    </div>
+
+    <header class="bg-header position-relative overflow-hidden">
+        <nav class="bg-nav py-2 position-relative">
+            <div class="container position-relative z-">
+                <div class="d-flex justify-content-between w-100">
+                    <img src="./assets/images/idox.logo.svg" alt="logo">
+                    <div class="position-absolute right-2">
+                        <label class="menu" id="menu">
+                            <span class="span4"></span>
+                            <span class="span5"></span>
+                            <span class="span6"></span>
+                        </label>
+                    </div>
+                    <p
+                        class="d-none me-5 mb-0 d-sm-block d-lg-none text-white btn-try ff-plus position-relative fw-400 fs-sm1 text-decoration-none cursor-point">
+                        Try now</p>
+                    <ul class=" mobileView d-flex align-items-center gap-5 mb-0">
+                        <img src="./assets/images/idox.logo.svg" alt="logo"
+                            class="d-block d-lg-none mt-5 pt-5 top-0 position-absolute">
+                        <li class="home list-unstyled"><a
+                                class="color-white opacity-8 position-relative ff-plus fw-normal fs-sm1 text-decoration-none"
+                                href="#">REDACT</a></li>
+                        <li class="home list-unstyled"><a
+                                class="color-white opacity-8 position-relative ff-plus fw-normal fs-sm1 text-decoration-none"
+                                href="#hub">
+                                EXTRACT</a></li>
+                        <li class="home list-unstyled"><a
+                                class=" color-white opacity-8 position-relative ff-plus fw-normal fs-sm1 text-decoration-none"
+                                href="#benefits">DETECT</a></li>
+                        <li class="home list-unstyled"><a
+                                class=" color-white opacity-8 position-relative ff-plus fw-normal fs-sm1 text-decoration-none"
+                                href="#programs">COMPARE</a></li>
+                        <li
+                            class="d-block d-sm-none d-lg-block text-white btn-try ff-plus position-relative fw-400 fs-sm2 cursor-point">
+                            Try now</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="py-md-5 pt-5 mt-4 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12 d-flex flex-column  justify-content-center align-items-center"
+                        data-aos="zoom-in-up">
+                        <div class="d-flex flex-column align-content-center align-items-start mw-524">
+                            <div class="d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="111" height="3" viewBox="0 0 111 3"
+                                    fill="none">
+                                    <path
+                                        d="M109.304 2.46582C109.856 2.46582 110.304 2.01811 110.304 1.46582C110.304 0.913536 109.856 0.46582 109.304 0.46582V2.46582ZM0 2.46582H109.304V0.46582H0V2.46582Z"
+                                        fill="#0389FF" />
+                                </svg>
+                                <p class="fs-lg ff-plus color-white mb-0 ms-3">world's <span><a href="sd">#1</a></span>
+                                </p>
+                            </div>
+                            <h1 class="fs-lg2 ff-plus color-white fw-bold mt-1 mb-0">AI powered document
+                                compliance
+                                solution
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 mt-5 mt-md-0" data-aos="zoom-in-down">
+                        <p class="fs-sm2 ff-plus fw-normal mb-3 fst-normal mw-524  color-white opacity-7 lh-170">iDox.ai
+                            provides the world’s most advanced AI powered redaction solution for organizations to scan
+                            and detect within
+                            document management systems, folders, and multitude of file sources.</p>
+                        <button
+                            class="text-white btn-try mt-3 ff-plus fw-normal position-relative fw-400 fs-sm2 cursor-point">
+                            Request Demo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="bg-light-black position-relative z-1">
+        <img src="./assets/images/light-1.svg" alt="light-1" class="light-1 position-absolute z-n1">
+        <div class="container-lg">
+            <img src="./assets/images/hero-img.webp" alt="images" class="w-100 transform-img position-relative z-n1">
+        </div>
+    </section>
+    <section class="bg-light-black py-3 py-sm-5 bg-slider-sec ">
+        <p class="fs-md ff-plus opacity-7 mt-4 fw-light position-relative z-2 color-white text-center">In collaborate
+            with</p>
+        <div class="slick2 mt-4 position-relative z-2">
+            <div class="slick-card">
+                <img src="./assets/images/slider-img-1.webp" class="img-slider" alt="images">
+            </div>
+            <div class="slick-card">
+                <img src="./assets/images/slider-img-2.webp" class="img-slider" alt="images">
+            </div>
+            <div class="slick-card">
+                <img src="./assets/images/slider-img-3.webp" class="img-slider" alt="images">
+            </div>
+            <div class="slick-card">
+                <img src="./assets/images/slider-img-4.webp" class="img-slider" alt="images">
+            </div>
+            <div class="slick-card">
+                <img src="./assets/images/slider-img-2.webp" class="img-slider" alt="images">
+            </div>
+            <div class="slick-card">
+                <img src="./assets/images/slider-img-5.webp" class="img-slider" alt="images">
+            </div>
+            <div class="slick-card">
+                <img src="./assets/images/slider-img-6.webp" class="img-slider" alt="images">
+            </div>
+            <div class="slick-card">
+                <img src="./assets/images/slider-img-7.webp" class="img-slider" alt="images">
+            </div>
+        </div>
+    </section>
+    <section class="bg-light-black">
+        <div class="container position-relative z-2">
+            <div class="row">
+                <div data-aos="fade-up" class="col-md-6 col-12">
+                    <img src="./assets/images/ai-img-rounded.webp" alt="ai-img-rounded" class="w-100">
+                </div>
+                <div data-aos="fade-down"
+                    class="col-md-6 col-12 d-flex flex-column justify-content-center align-items-center">
+                    <div class="mw-467">
+                        <h2 class="fs-lg1 fw-medium ff-plus color-white mw-467 lh-126">Compliance Security Trust</h2>
+                        <p class="fs-sm2 fw-normal color-white opacity-7 ff-plus mw-467 lh-170 mb-3">Posuere ultrices
+                            aliquet risus malesuada
+                            viverra nec praesent. Sed nisl facilisi augue.</p>
+                        <button
+                            class="text-white btn-demo mt-3 ff-plus fw-normal position-relative fw-400 fs-sm2 cursor-point">
+                            Watch Demo Video </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==========accordion-section============ -->
+    <section class="py-5 bg-light-black position-relative z-1">
+        <img src="./assets/images/light-2.svg" alt="light-2" class="position-absolute z-n1 d-none d-md-block light-2">
+        <img src="./assets/images/light-3.webp" alt="light-2"
+            class="position-absolute z-n1 d-none d-md-block light-3 start-0">
+        <div class="container-lg position-relative z-1">
+            <div class="row">
+                <div data-aos="flip-right"
+                    class="col-md-6 col-12 d-flex flex-column justify-content-center align-items-center">
+                    <div class="mw-467">
+                        <h2 class="fs-lg1 fw-medium ff-plus color-white mw-467 lh-126">How we can help?</h2>
+                        <p class="fs-sm2 fw-normal color-white opacity-7 ff-plus mw-467 lh-170 mb-3">Whether you handle
+                            financial, government, healthcare, or legal information, iDox.ai allows organizations to
+                            reduce
+                            risk
+                            of human error, combat time sensitive redaction requests, avoid costly penalties at a
+                            fraction
+                            of the price.</p>
+                        <button
+                            class="text-white btn-demo mt-3 ff-plus fw-normal position-relative fw-400 fs-sm2 cursor-point">
+                            Watch Demo Video </button>
+                    </div>
+                </div>
+                <div data-aos="flip-left" class="col-md-6 mt-5 mt-lg-0">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <div class="d-flex">
+                                <img src="./assets/images/watch-img.webp" alt="accordion-img" id="collapseOne"
+                                    class="accordion-collapse collapse show tranlate-xy img_mwh"
+                                    data-bs-parent="#accordionExample">
+                                <div class="d-block">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fs-sm3 fw-medium pl-26 d-block" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Time-Saving AI Integrations
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div
+                                            class=" accordion-body mx-370 fs-sm2 fw-normal lh-170 text-transform color-white opacity-8">
+                                            Posuere ultrices aliquet risus malesuada viverra nec praesent. Sed nisl
+                                            facilisi
+                                            augue.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="d-flex">
+                                <img src="./assets/images/watch-img.webp" alt="accordion-img" id="flush-collapseOne"
+                                    class="accordion-collapse collapse img_mwh tranlate-xy"
+                                    data-bs-parent="#accordionFlushExample">
+                                <div class="d-block">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed fs-sm3 fw-medium pl-26 d-block"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Enterprise-Level Scalability
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div
+                                            class=" accordion-body mx-370 fs-sm2 fw-normal lh-170 text-transform color-white opacity-7">
+                                            Posuere ultrices aliquet
+                                            risus malesuada viverra nec
+                                            praesent. Sed nisl facilisi augue.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="d-flex">
+                                <img src="./assets/images/watch-img.webp" alt="accordion-img" id="flush-collapsethree"
+                                    class="accordion-collapse collapse img_mwh tranlate-xy"
+                                    data-bs-parent="#accordionFlushExample">
+                                <div class="d-block">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed fs-sm3 fw-medium pl-26 d-block"
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapsethree" aria-expanded="false"
+                                            aria-controls="flush-collapsethree">
+                                            Cloud-Based For Multiple Locations
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapsethree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div
+                                            class=" accordion-body mx-370 fs-sm2 fw-normal lh-170 text-transform color-white opacity-7">
+                                            Posuere ultrices aliquet
+                                            risus malesuada viverra nec
+                                            praesent. Sed nisl facilisi augue.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="d-flex">
+                                <img src="./assets/images/watch-img.webp" alt="accordion-img" id="flush-collapsefour"
+                                    class="accordion-collapse collapse img_mwh tranlate-xy"
+                                    data-bs-parent="#accordionFlushExample">
+                                <div class="d-block">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed fs-sm3 fw-medium pl-26 d-block"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour"
+                                            aria-expanded="false" aria-controls="flush-collapsefour">
+                                            Collaborative Work Among Teams
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapsefour" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div
+                                            class=" accordion-body mx-370 fs-sm2 fw-normal lh-170 text-transform color-white opacity-7">
+                                            Posuere ultrices aliquet
+                                            risus malesuada viverra nec
+                                            praesent. Sed nisl facilisi augue.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="d-flex">
+                                <img src="./assets/images/watch-img.webp" alt="accordion-img" id="flush-collapsefive"
+                                    class="accordion-collapse collapse img_mwh tranlate-xy"
+                                    data-bs-parent="#accordionFlushExample">
+                                <div class="d-block">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed fs-sm3 fw-medium pl-26 d-block"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive"
+                                            aria-expanded="false" aria-controls="flush-collapsefive">
+                                            Proactive Risk Assessment Reports
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapsefive" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div
+                                            class=" accordion-body mx-370 fs-sm2 fw-normal lh-170 text-transform color-white opacity-7">
+                                            Posuere ultrices aliquet
+                                            risus malesuada viverra nec
+                                            praesent. Sed nisl facilisi augue.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="d-flex">
+                                <img src="./assets/images/watch-img.webp" alt="accordion-img" id="flush-collapsesix"
+                                    class="accordion-collapse collapse img_mwh tranlate-xy"
+                                    data-bs-parent="#accordionFlushExample">
+                                <div class="d-block">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed fs-sm3 fw-medium pl-26 d-block"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesix"
+                                            aria-expanded="false" aria-controls="flush-collapsesix">
+                                            High Accuracy To Avoid Oversights
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapsesix" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div
+                                            class=" accordion-body mx-370 fs-sm2 fw-normal lh-170 text-transform color-white opacity-7">
+                                            Posuere ultrices aliquet
+                                            risus malesuada viverra nec
+                                            praesent. Sed nisl facilisi augue.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="py-5 pt-0 pt-md-5 mt-0 mt-lg-5 bg-light-black position-relative overflow-md-hidden">
+        <div class="light-5 position-absolute d-none d-md-block"></div>
+        <div class="container-lg pt-md-5 position-relative z-1">
+            <div class="row">
+                <div data-aos="fade-up"
+                    class="col-md-6 col-12 align-items-center d-flex flex-column justify-content-center  position-relative">
+                    <div class="light-4 position-absolute"></div>
+                    <div class="mw-416">
+                        <h2 class="fs-lg1 mw-416 ff-plus color-white fw-medium lh-126 fst-normal mb-4 pb-2">How We Bring
+                            Value</h2>
+                        <div class="d-flex align-items-center  box-accuracy gap-3 ps-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="54" viewBox="0 0 52 54"
+                                fill="none">
+                                <rect x="0.5" y="0.869873" width="51.0161" height="52.2604" rx="25.5081" fill="#0389FF"
+                                    fill-opacity="0.12" />
+                                <path
+                                    d="M26.8784 29.5509L33.9087 22.5206L32.1667 20.7164L26.8784 26.0046L24.2032 23.3916L22.4612 25.1336L26.8784 29.5509ZM21.0302 34.4659C20.3459 34.4659 19.7598 34.222 19.272 33.7342C18.7843 33.2465 18.5408 32.6608 18.5416 31.9773V17.0457C18.5416 16.3614 18.7855 15.7753 19.2733 15.2875C19.761 14.7998 20.3467 14.5563 21.0302 14.5571H35.9618C36.6461 14.5571 37.2322 14.801 37.72 15.2888C38.2077 15.7765 38.4512 16.3622 38.4504 17.0457V31.9773C38.4504 32.6616 38.2065 33.2477 37.7187 33.7355C37.231 34.2232 36.6453 34.4667 35.9618 34.4659H21.0302ZM16.053 39.443C15.3687 39.443 14.7826 39.1992 14.2949 38.7114C13.8071 38.2236 13.5636 37.638 13.5645 36.9545V19.5343H16.053V36.9545H33.4732V39.443H16.053Z"
+                                    fill="#0389FF" />
+                            </svg>
+                            <p class="ff-plus fs-sm3 m-0 color-white opacity-8 lh-126">High Accuracy Rate</p>
+                        </div>
+                        <div class="d-flex align-items-center  box-accuracy gap-3 ps-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="54" viewBox="0 0 52 54"
+                                fill="none">
+                                <rect x="0.5" y="0.869873" width="51.0161" height="52.2604" rx="25.5081" fill="#0389FF"
+                                    fill-opacity="0.12" />
+                                <path
+                                    d="M26.8784 29.5509L33.9087 22.5206L32.1667 20.7164L26.8784 26.0046L24.2032 23.3916L22.4612 25.1336L26.8784 29.5509ZM21.0302 34.4659C20.3459 34.4659 19.7598 34.222 19.272 33.7342C18.7843 33.2465 18.5408 32.6608 18.5416 31.9773V17.0457C18.5416 16.3614 18.7855 15.7753 19.2733 15.2875C19.761 14.7998 20.3467 14.5563 21.0302 14.5571H35.9618C36.6461 14.5571 37.2322 14.801 37.72 15.2888C38.2077 15.7765 38.4512 16.3622 38.4504 17.0457V31.9773C38.4504 32.6616 38.2065 33.2477 37.7187 33.7355C37.231 34.2232 36.6453 34.4667 35.9618 34.4659H21.0302ZM16.053 39.443C15.3687 39.443 14.7826 39.1992 14.2949 38.7114C13.8071 38.2236 13.5636 37.638 13.5645 36.9545V19.5343H16.053V36.9545H33.4732V39.443H16.053Z"
+                                    fill="#0389FF" />
+                            </svg>
+                            <p class="ff-plus fs-sm3 m-0 color-white opacity-8 lh-126">Time Saving</p>
+                        </div>
+                        <div class="d-flex align-items-center  box-accuracy gap-3 ps-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="54" viewBox="0 0 52 54"
+                                fill="none">
+                                <rect x="0.5" y="0.869873" width="51.0161" height="52.2604" rx="25.5081" fill="#0389FF"
+                                    fill-opacity="0.12" />
+                                <path
+                                    d="M26.8784 29.5509L33.9087 22.5206L32.1667 20.7164L26.8784 26.0046L24.2032 23.3916L22.4612 25.1336L26.8784 29.5509ZM21.0302 34.4659C20.3459 34.4659 19.7598 34.222 19.272 33.7342C18.7843 33.2465 18.5408 32.6608 18.5416 31.9773V17.0457C18.5416 16.3614 18.7855 15.7753 19.2733 15.2875C19.761 14.7998 20.3467 14.5563 21.0302 14.5571H35.9618C36.6461 14.5571 37.2322 14.801 37.72 15.2888C38.2077 15.7765 38.4512 16.3622 38.4504 17.0457V31.9773C38.4504 32.6616 38.2065 33.2477 37.7187 33.7355C37.231 34.2232 36.6453 34.4667 35.9618 34.4659H21.0302ZM16.053 39.443C15.3687 39.443 14.7826 39.1992 14.2949 38.7114C13.8071 38.2236 13.5636 37.638 13.5645 36.9545V19.5343H16.053V36.9545H33.4732V39.443H16.053Z"
+                                    fill="#0389FF" />
+                            </svg>
+                            <p class="ff-plus fs-sm3 m-0 color-white opacity-8 lh-126">Cost Saving</p>
+                        </div>
+                        <div class="d-flex align-items-center  box-accuracy gap-3 ps-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="54" viewBox="0 0 52 54"
+                                fill="none">
+                                <rect x="0.5" y="0.869873" width="51.0161" height="52.2604" rx="25.5081" fill="#0389FF"
+                                    fill-opacity="0.12" />
+                                <path
+                                    d="M26.8784 29.5509L33.9087 22.5206L32.1667 20.7164L26.8784 26.0046L24.2032 23.3916L22.4612 25.1336L26.8784 29.5509ZM21.0302 34.4659C20.3459 34.4659 19.7598 34.222 19.272 33.7342C18.7843 33.2465 18.5408 32.6608 18.5416 31.9773V17.0457C18.5416 16.3614 18.7855 15.7753 19.2733 15.2875C19.761 14.7998 20.3467 14.5563 21.0302 14.5571H35.9618C36.6461 14.5571 37.2322 14.801 37.72 15.2888C38.2077 15.7765 38.4512 16.3622 38.4504 17.0457V31.9773C38.4504 32.6616 38.2065 33.2477 37.7187 33.7355C37.231 34.2232 36.6453 34.4667 35.9618 34.4659H21.0302ZM16.053 39.443C15.3687 39.443 14.7826 39.1992 14.2949 38.7114C13.8071 38.2236 13.5636 37.638 13.5645 36.9545V19.5343H16.053V36.9545H33.4732V39.443H16.053Z"
+                                    fill="#0389FF" />
+                            </svg>
+                            <p class="ff-plus fs-sm3 m-0 color-white opacity-8 lh-126">Labor Hours Gained Back</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-down"
+                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
+                    <img src="./assets/images/ai-face-img.webp" alt="ai-mouth-img" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-md-5 position-relative z-1 p-md-0 m-0 overflow-hidden">
+        <h2 class="fs-lg1 mw-416 ff-plus color-white fw-medium lh-126 fst-normal mx-auto mw-150 mb-4 pb-2">Testimonials
+        </h2>
+        <div class="light-6 position-absolute overflow-hidden z-n1"></div>
+        <div class="custom-container container ">
+            <div class="slider3">
+                <div data-aos="zoom-in-up"
+                    class="slider3-card  opacity-7 cursor-point d-flex flex-column align-items-center justify-content-center">
+                    <img src="/assets/images/slider2-img.svg" alt="girl image" class="mb-3">
+                    <p class="ff-plus color-white fs-md fst-italic mw-834 fw-normal lh-150 mb-5 mb-14">
+                        “Quick, well designed, and saved our team over 97% of time. Our team was able to meet
+                        subject access requests and meet
+                        GDPR mandates using the iDox.ai redaction solution.”</p>
+                    <p class="ff-plus color-white fs-sm fst-italic fw-normal lh-150 mb-14">
+                        Carl Bevan</p>
+                </div>
+                <div
+                    class="slider3-card cursor-point opacity-7 d-flex flex-column align-items-center justify-content-center">
+                    <img src="/assets/images/slider2-img.svg" alt="girl image" class="mb-3">
+                    <p class="ff-plus color-white fs-md fst-italic mw-834 fw-normal lh-150 mb-5 mb-14">
+                        “Quick, well designed, and saved our team over 97% of time. Our team was able to meet
+                        subject access requests and meet
+                        GDPR mandates using the iDox.ai redaction solution.”</p>
+                    <p class="ff-plus color-white fs-sm fst-italic fw-normal lh-150 mb-14">
+                        Carl Bevan</p>
+                </div>
+                <div
+                    class="slider3-card cursor-point opacity-7 d-flex flex-column align-items-center justify-content-center">
+                    <img src="/assets/images/slider2-img.svg" alt="girl image" class="mb-3">
+                    <p class="ff-plus color-white fs-md fst-italic mw-834 fw-normal lh-150 mb-5 mb-14">
+                        “Quick, well designed, and saved our team over 97% of time. Our team was able to meet
+                        subject access requests and meet
+                        GDPR mandates using the iDox.ai redaction solution.”</p>
+                    <p class="ff-plus color-white fs-sm fst-italic fw-normal lh-150 mb-14">
+                        Carl Bevan</p>
+                </div>
+                <div
+                    class="slider3-card cursor-point opacity-7 d-flex flex-column align-items-center justify-content-center">
+                    <img src="/assets/images/slider2-img.svg" alt="girl image" class="mb-3">
+                    <p class="ff-plus color-white fs-md fst-italic mw-834 fw-normal lh-150 mb-5 mb-14">
+                        “Quick, well designed, and saved our team over 97% of time. Our team was able to meet
+                        subject access requests and meet
+                        GDPR mandates using the iDox.ai redaction solution.”</p>
+                    <p class="ff-plus color-white fs-sm fst-italic fw-normal lh-150 mb-14">
+                        Carl Bevan</p>
+                </div>
+            </div>
+    </section>
+    <section class="bg-light-black py-md-5 pt-0 position-relative z-3">
+        <img src="./assets/images/light-8.png" alt="light-8" class="position-absolute light-8">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12 position-relative" data-aos="zoom-in-up">
+                    <div class="light-7 position-absolute"></div>
+                    <img src="./assets/images/3-company-img.webp" alt="ai-img-rounded" class="w-100">
+                </div>
+                <div class="col-md-6 col-12 mt-5 mt-md-0 d-flex flex-column justify-content-center align-items-center"
+                    data-aos="zoom-in-down">
+                    <div class="mw-467">
+                        <h2 class="fs-lg1 fw-medium ff-plus color-white mw-467 lh-126">We provide secure solutions</h2>
+                        <p class="fs-sm2 fw-normal color-white opacity-7 ff-plus mw-467 lh-170 mb-3">For nationwide and
+                            global teams, our cloud-based solutions keep everyone on the same page, all backed by our
+                            SOC 2 and
+                            ISO 27001 certifications.</p>
+                        <button
+                            class="text-white btn-try mt-3 ff-plus fw-normal position-relative fw-400 fs-sm2 cursor-point">
+                            Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 drag-section position-relative">
+        <div class="light-9"></div>
+        <div class="container-lg pt-5 mt-4">
+            <h2 class="fw-medium fs-lg1 color-white ff-plus mb-0 text-center">How it works
+            </h2>
+            <p class="ff-plus fs-sm2 color-white fw-normal opacity-7 pt-2 text-center mb-5">Only 2 minutes
+                redacting a 10 page document</p>
+            <div class="row justify-content-center mt-4">
+                <div data-aos="zoom-in-up"
+                    class="col-xl-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center flex-column align-items-center position-relative order-md-0 order-sm-0 order-0">
+                    <img src="./assets/images/right-arrow.svg" alt="s7-arrow" class="arrow1">
+                    <div>
+                        <img src="./assets/images/drag-drop-img-1.webp" alt="image" class="img-drag">
+                        <p class="fw-medium fs-md text-white ff-plus pt-4">Click to select a file</p>
+                    </div>
+                </div>
+                <div data-aos="zoom-in-down"
+                    class="col-xl-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center flex-column align-items-center position-relative order-md-1 order-sm-1 order-1 mt-4 mt-sm-0">
+                    <img src="./assets/images/right-arrow2.svg" alt="s7-arrow" class="arrow2">
+                    <div>
+                        <img src="./assets/images/drag-drop-img-2.webp" alt="image" class="img-drag">
+                        <p class="fw-medium fs-md text-white ff-plus pt-4">Select data model</p>
+                    </div>
+                </div>
+                <div data-aos="zoom-in-up"
+                    class="col-xl-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center flex-column align-items-center position-relative order-md-2 order-sm-3 order-2 mt-4 mt-md-0">
+                    <img src="./assets/images/right-arrow3.svg" alt="s7-arrow" class="arrow3">
+                    <div>
+                        <img src="./assets/images/drag-drop-img-3.webp" alt="image" class="img-drag">
+                        <p class="fw-medium fs-md text-white ff-plus pt-4">Auto Highlight by AI</p>
+                    </div>
+                </div>
+                <div data-aos="zoom-in-down"
+                    class="col-xl-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center flex-column align-items-center order-md-3 order-sm-2 order-3 mt-4 mt-md-0">
+                    <div>
+                        <img src="./assets/images/drag-drop-img-4.webp" alt="image" class="img-drag">
+                        <p class="fw-medium fs-md text-white ff-plus pt-4">Doc. has been redacted</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center"><button class="fw-semibold fs-sm2 mt-4 text-white ff-plus btn-try">Try
+                    Now</button></div>
+        </div>
+    </section>
+    <section class="bg-color py-5 position-relative">
+        <div class="light-10 position-absolute"></div>
+        <div class="container-lg">
+            <h3 class="ff-plus fs-lg fw-medium  text-center color-white m-0">Our Integrations</h3>
+            <div class="row pt-5">
+                <div data-aos="zoom-in-down"
+                    class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center align-items-center p-5 flex-column   border-box1">
+                    <img src="./assets/images/g-img-1.svg" alt="images" class="">
+                </div>
+                <div data-aos="zoom-in-up"
+                    class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center align-items-center p-5 flex-column  border-box2">
+                    <img src="./assets/images/g-img-2.svg" alt="images" class="">
+                </div>
+                <div data-aos="zoom-in-down"
+                    class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center align-items-center p-5 flex-column   border-box3">
+                    <img src="./assets/images/g-img-3.svg" alt="images" class="">
+                </div>
+                <div data-aos="zoom-in-up"
+                    class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center align-items-center p-5 flex-column  border-box4">
+                    <img src="./assets/images/g-img-4.svg" alt="images" class="">
+                </div>
+                <div data-aos="zoom-in-down"
+                    class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center align-items-center p-5 flex-column border-box5">
+                    <img src="./assets/images/g-img-5.webp" alt="images" class="">
+                </div>
+                <div data-aos="zoom-in-up"
+                    class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center align-items-center p-5 flex-column   border-box6">
+                    <img src="./assets/images/g-img-6.svg" alt="images" class="">
+                </div>
+                <div data-aos="zoom-in-down"
+                    class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center align-items-center p-5 flex-column border-box7">
+                    <img src="./assets/images/g-img-7.webp" alt="images" class="">
+                </div>
+                <div data-aos="zoom-in-up"
+                    class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center align-items-center p-5 flex-column border-box8">
+                    <img src="./assets/images/g-img-8.svg" alt="images" class="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-color py-4">
+        <div class="container-lg px-3">
+            <div class="row">
+                <div class="col-md-6 col-12 d-flex flex-column justify-content-center" data-aos="zoom-out-up">
+                    <h3 class="ff-plus fw-medium  fs-lg1 lh-126 mw-524 color-white">Accelerate Your Enterprise’s
+                        Document Redaction
+                        Efforts</h3>
+                    <p class="fs-sm2 ff-plus fw-normal lh-170 color-white opacity-7 max-474">As your team carries out
+                        time-intensive manual redaction processes, there’s a trade-off between
+                        security and efficiency. iDox.ai Redact offers the best of both worlds with thorough, automatic
+                        redactions.</p>
+                    <div>
+                        <button class="btn-try fw-normal fs-sm2 text-white ">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 position-relative" data-aos="zoom-out-down">
+                    <div class="light-11 position-absolute"></div>
+                    <img src="./assets/images/2-card-img.webp" alt="accelerate-img" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-black1 position-relative">
+        <div class="light-12 position-absolute"></div>
+        <div class="light-13 d-none d-md-block position-absolute"></div>
+        <div class="container py-0 py-lg-5 ">
+            <p class="fs-lg1 fw-medium ff-Plus color-white lh-126 text-center">choose the plan best fits for you</p>
+            <div class="row justify-content-center py-5">
+                <div class="col-lg-4 col-md-6 col-12 pt-102 pb-5 card-select position-relative position-linecol-4-1 "
+                    data-aos="zoom-out-up">
+                    <h1 class="fs-lg fw-semibold ff-Plus card-head lh-140 color-white text-center pt-5 ">$0.99</h1>
+                    <p class="fs-md fw-medium ff-Plus color-white text-center basic pb-5">7 Days</p>
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <div class="d-flex pt-89 pt-5">
+                                <span><img src="./assets/images/right-tik-img.webp" alt="image" class="right-tik-img">
+                                </span>
+                                <p class="fs-sm3 fw-normal lh-140 ff-Plus color-white opacity-7 px-3">50 pages analysis
+                                    ( 7
+                                    days )
+                                </p>
+                            </div>
+                            <div class="d-flex pt-4 ">
+                                <span><img src="./assets/images/right-tik-img.webp" alt="image" class="right-tik-img">
+                                </span>
+                                <p class="fs-sm3 fw-normal lh-140 ff-Plus color-white opacity-7 px-3">Share up to 2
+                                    users
+                                </p>
+                            </div>
+                            <div class="d-flex pt-4 ">
+                                <span><img src="./assets/images/right-tik-img.webp" alt="image" class="right-tik-img">
+                                </span>
+                                <p class="fs-sm3 fw-normal lh-140 ff-Plus color-white opacity-7 px-3">After 7 day, auto
+                                    renews plan
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center pt-5"><button
+                            class="btn-select fs-sm2 fw-semibold ff-Plus color-white">select</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 pt-102 pb-5 card-select position-relative position-linecol-4-2"
+                    data-aos="zoom-out-down">
+                    <h2 class="fs-lg fw-semibold ff-Plus card-head lh-140 color-white text-center pt-5">$400</h2>
+                    <p class="fs-md fw-medium ff-Plus color-white  text-center basic pb-5">Business</p>
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <div class="d-flex pt-5">
+                                <span><img src="./assets/images/right-tik-img.webp" alt="image" class="right-tik-img">
+                                </span>
+                                <p class="fs-sm3 fw-normal lh-140 ff-Plus color-white opacity-7 px-3 ">unlimited pages
+                                    analysis/ year
+                                </p>
+                            </div>
+                            <div class="d-flex pt-4 ">
+                                <span><img src="./assets/images/right-tik-img.webp" alt="image" class="right-tik-img">
+                                </span>
+                                <p class="fs-sm3 fw-normal lh-140 ff-Plus color-white opacity-7 px-3">Share up to 10
+                                    users
+                                </p>
+                            </div>
+                            <div class="d-flex pt-4 ">
+                                <span><img src="./assets/images/right-tik-img.webp" alt="image" class="right-tik-img">
+                                </span>
+                                <p class="fs-sm3 fw-normal lh-140 ff-Plus color-white opacity-7 px-3">Maximum 100 pages
+                                    per
+                                    doc.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center pt-5"><button
+                            class="btn-select fs-sm2 fw-semibold ff-Plus color-white">Select</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 pt-102 pb-5 card-select position-relative position-linecol-4-3"
+                    data-aos="fade-up">
+                    <h3 class="fs-lg fw-semibold ff-Plus card-head lh-140 color-white text-center pt-5">$190</h3>
+                    <p class="fs-md fw-medium ff-Plus color-white  text-center basic pb-5">Basic</p>
+                    <div class="d-flex justify-content-center">v
+                        <div>
+                            <div class="d-flex pt-5 ">
+                                <span><img src="./assets/images/right-tik-img.webp" alt="image" class="right-tik-img">
+                                </span>
+                                <p class="fs-sm3 fw-normal lh-140 ff-Plus color-white opacity-7 px-3">3000 pages
+                                    analysis/
+                                    year
+                                </p>
+                            </div>
+                            <div class="d-flex pt-4 ">
+                                <span><img src="./assets/images/right-tik-img.webp" alt="image" class="right-tik-img">
+                                </span>
+                                <p class="fs-sm3 fw-normal lh-140 ff-Plus color-white opacity-7 px-3">Share up to 2
+                                    users
+                                </p>
+                            </div>
+                            <div class="d-flex pt-4 ">
+                                <span><img src="./assets/images/right-tik-img.webp" alt="image" class="right-tik-img">
+                                </span>
+                                <p class="fs-sm3 fw-normal lh-140 ff-Plus color-white opacity-7 px-3">Maximum 100 pages
+                                    per
+                                    doc.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center pt-5"><button
+                            class="btn-select fs-sm2 fw-semibold ff-Plus text-white">select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shadowimg-1-secton8"> </div>
+    </section>
+    <section class="bg-img py-5 d-flex flex-column align-items-center justify-content-center">
+        <div class="container">
+            <div class="text-center" data-aos="zoom-in-up">
+                <p class="ff-plus fw-semibold fs-lg1 color-white mb-2 card-head lh-126">Get started today!</p>
+                <p class="ff-plus mx-auto fw-normal mw-617 fs-sm1 color-white mb-5 card-head lh-170">Arcu egestas
+                    pellentesque
+                    velit
+                    facilisis in in. Tortor nisl urna lacus mauris adipiscing commodo purus. Lectus etiam
+                    arcu sagittis pellentesque hendrerit.</p>
+                <form
+                    class="text-center d-flex flex-column flex-sm-row py-3 py-sm-0 justify-content-between mx-auto gap-sm-5 gap-3 form">
+                    <input type="email" placeholder="Enter Your Email Here" class="input ">
+                    <button class="btn-try fw-normal fs-sm2 text-white float-end">Sign Up Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-footer overflow-hidden">
+        <div class="container-fluid p-0">
+            <div class="d-flex flex-wrap justify-content-between gap-38 px-3 py-5 my-md-5">
+                <div class="d-flex flex-column" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                    <img src="./assets/images/logo-footer-img.webp" alt="navimg" class="footer-logo">
+                    <p class="fs-sm opacity-6 fw-normal ff-Plus lh-150 color-white mw-225 pt-3">Any system that works
+                        with
+                        API can be
+                        connected via APIcenter.</p>
+                    <div class="d-flex gap-3 pt-4">
+                        <a href="https://www.facebook.com/" target="_blank" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000" class="svg-icon"><svg width="33" height="33" viewBox="0 0 33 33"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2_12018)">
+                                    <circle cx="16.3418" cy="16.9912" r="15.5" stroke="white" />
+                                    <path
+                                        d="M18.3418 18.4912H20.8418L21.8418 14.4912H18.3418V12.4912C18.3418 11.4612 18.3418 10.4912 20.3418 10.4912H21.8418V7.13121C21.5158 7.08821 20.2848 6.99121 18.9848 6.99121C16.2698 6.99121 14.3418 8.64821 14.3418 11.6912V14.4912H11.3418V18.4912H14.3418V26.9912H18.3418V18.4912Z"
+                                        fill="white" />
+                                </g>
+
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="3000" class="svg-icon"><svg width="33" height="33" viewBox="0 0 33 33"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2_12022)">
+                                    <circle cx="16.3418" cy="16.9912" r="15.5" stroke="white" />
+                                    <path
+                                        d="M15.8411 13.6577C15.0897 13.6577 14.369 13.9562 13.8377 14.4876C13.3063 15.0189 13.0078 15.7396 13.0078 16.491C13.0078 17.2425 13.3063 17.9632 13.8377 18.4945C14.369 19.0259 15.0897 19.3244 15.8411 19.3244C16.5926 19.3244 17.3133 19.0259 17.8446 18.4945C18.376 17.9632 18.6745 17.2425 18.6745 16.491C18.6745 15.7396 18.376 15.0189 17.8446 14.4876C17.3133 13.9562 16.5926 13.6577 15.8411 13.6577Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.4418 7.99121C11.0892 7.99121 9.79199 8.52853 8.83555 9.48497C7.87912 10.4414 7.3418 11.7386 7.3418 13.0912L7.3418 19.8912C7.3418 21.2438 7.87912 22.541 8.83555 23.4975C9.79199 24.4539 11.0892 24.9912 12.4418 24.9912H19.2418C20.5944 24.9912 21.8916 24.4539 22.848 23.4975C23.8045 22.541 24.3418 21.2438 24.3418 19.8912V13.0912C24.3418 11.7386 23.8045 10.4414 22.848 9.48497C21.8916 8.52853 20.5944 7.99121 19.2418 7.99121H12.4418ZM11.8751 16.4912C11.8751 15.4392 12.293 14.4302 13.0369 13.6864C13.7808 12.9425 14.7898 12.5245 15.8418 12.5245C16.8938 12.5245 17.9028 12.9425 18.6467 13.6864C19.3905 14.4302 19.8085 15.4392 19.8085 16.4912C19.8085 17.5432 19.3905 18.5522 18.6467 19.2961C17.9028 20.04 16.8938 20.4579 15.8418 20.4579C14.7898 20.4579 13.7808 20.04 13.0369 19.2961C12.293 18.5522 11.8751 17.5432 11.8751 16.4912ZM19.8085 12.5245H20.9418V11.3912H19.8085V12.5245Z"
+                                        fill="white" />
+                                </g>
+
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="4000" class="svg-icon"><svg width="33" height="33" viewBox="0 0 33 33"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2_12029)">
+                                    <circle cx="16.3418" cy="16.9912" r="15.5" stroke="white" />
+                                    <path
+                                        d="M25.3418 11.6165C24.7161 11.9009 24.0416 12.0878 23.3428 12.1772C24.0579 11.7465 24.6104 11.0639 24.8705 10.2431C24.196 10.6494 23.4484 10.9338 22.6602 11.0964C22.0182 10.3975 21.1162 9.99121 20.0923 9.99121C18.1826 9.99121 16.6224 11.5514 16.6224 13.4773C16.6224 13.7536 16.6549 14.0218 16.7118 14.2737C13.8189 14.1274 11.2428 12.7379 9.52822 10.6332C9.22755 11.1451 9.0569 11.7465 9.0569 12.3803C9.0569 13.5911 9.66637 14.6638 10.609 15.2732C10.032 15.2732 9.49572 15.1107 9.0244 14.8669V14.8913C9.0244 16.5816 10.2271 17.9955 11.8198 18.3124C11.3084 18.4524 10.7716 18.4718 10.2515 18.3693C10.4722 19.0621 10.9044 19.6682 11.4875 20.1026C12.0705 20.5369 12.775 20.7777 13.5019 20.7909C12.2697 21.7664 10.7423 22.2937 9.17067 22.2861C8.89438 22.2861 8.61809 22.2699 8.3418 22.2374C9.88577 23.2288 11.7223 23.8057 13.6888 23.8057C20.0923 23.8057 23.6109 18.4912 23.6109 13.8837C23.6109 13.7293 23.6109 13.583 23.6028 13.4286C24.2854 12.941 24.8705 12.3234 25.3418 11.6165Z"
+                                        fill="white" />
+                                </g>
+
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="d-flex flex-wrap gap-5 ">
+                        <div class="d-flex flex-column" data-aos="fade-down-right">
+                            <p class="fs-sm2 fw-medium ff-Plus color-white mb-2">PRODUCTS</p>
+                            <ul class="mb-0 p-0">
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white ">iDox.ai
+                                        Data
+                                        Discovery</a></li>
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white ">iDox.ai
+                                        Data
+                                        Redact</a></li>
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white ">iDox.ai
+                                        Data
+                                        Compair</a></li>
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white ">iDox.ai
+                                        Data
+                                        Review</a></li>
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white ">Industries</a>
+                                </li>
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white ">Developer</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d-flex flex-column" data-aos="fade-down-left">
+                            <p class="fs-sm2 fw-medium ff-Plus color-white mb-2">STORE</p>
+                            <ul class="mb-0 p-0">
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white">Choose a
+                                        plan</a></li>
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white">Integrations</a>
+                                </li>
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white">Pricing</a>
+                                </li>
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white">News</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d-flex flex-column" data-aos="fade-down-right">
+                            <p class="fs-sm2 fw-medium ff-Plus color-white mb-2">SUPPORT</p>
+                            <ul class="mb-0 p-0">
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white">Customer
+                                        Support</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex flex-column " data-aos="fade-down-left">
+                            <p class="fs-sm2 fw-medium ff-Plus color-white mb-2">COMPANY</p>
+                            <ul class="mb-0 p-0">
+                                <li class="pt-2"><a href="" class="fs-sm2 opacity-6 fw-normal ff-Plus color-white">About
+                                        Us</a>
+                                </li>
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white">iSecurity</a>
+                                </li>
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white">Partnership
+                                        Opportunities</a></li>
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white">Careers</a>
+                                </li>
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white">Privacy
+                                        Policy</a></li>
+                                <li class="pt-2"><a href="" class="fs-sm2 opacity-6 fw-normal ff-Plus color-white">Terms
+                                        of
+                                        Services</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex flex-column" data-aos="fade-down-right">
+                            <p class="fs-sm2 fw-medium ff-Plus color-white mb-2">ENTERPRISE</p>
+                            <ul class="mb-0 p-0">
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white">Enterprise</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="d-flex flex-column" data-aos="fade-down-right">
+                            <p class="fs-sm2 fw-medium ff-Plus color-white mb-2">RESOURCES</p>
+                            <ul class="mb-0 p-0">
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white">Blog</a>
+                                </li>
+                                <li class="pt-2"><a href="" class="fs-sm2 opacity-6 fw-normal ff-Plus color-white">Case
+                                        Studies</a></li>
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white">eBooks</a>
+                                </li>
+                                <li class="pt-2"><a href=""
+                                        class="fs-sm2 opacity-6 fw-normal ff-Plus color-white">Events</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center pt-95 lastline position-relative">
+            <p class="fs-sm2 opacity-6 fw-normal ff-Plus color-white  pt-4 pb-4">2023 © Foxit Software
+                Incorporated. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+            easing: 'ease-in-sine',
+            once: true
+        });
+    </script>
+</body>
+
+</html>
