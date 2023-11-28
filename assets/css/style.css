@@ -116,9 +116,11 @@
 .light-purple {
     color: var(--color-light-purple);
 }
-.svg-blue-line svg path{
-fill: var(--color-light-blue);
+
+.svg-blue-line svg path {
+    fill: var(--color-light-blue);
 }
+
 .light-purple1 {
     color: var(--color-light-purple1);
 }
