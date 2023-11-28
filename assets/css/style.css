@@ -424,12 +424,14 @@ nav div ul li a {
 }
 
 .accordion-item {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 531px;
     border: none !important;
     border-radius: 10px !important;
     background: rgba(3, 137, 255, 0.12) !important;
-    /* backdrop-filter: blur(12.5px) !important; */
-    margin-bottom: 20px !important;
-
+    backdrop-filter: blur(12.5px) !important;
+    margin-bottom: 10px !important;
 }
 
 .opacity-6 {
@@ -441,9 +443,8 @@ nav div ul li a {
 }
 
 .accordion-body {
-    padding: 0 !important;
-    padding-left: 27px !important;
-    padding-bottom: 20px !important;
+    padding: 0px 20px 35px 99px !important;
+    margin-top: -35px !important;
 }
 
 .mw-370 {
@@ -458,13 +459,22 @@ nav div ul li a {
     width: 100%;
     color: #fbfdff !important;
     transition: all 500ms linear !important;
-    padding: 22.5px 25.456px 23.5px 25.544px !important;
+    padding: 22.5px 0px 23.5px 22.544px !important;
 }
 
 .accordion-button:not(.collapsed) {
-    padding-bottom: var(--bs-accordion-active-padding-bottom) !important;
+    padding: 0px 0px 23.5px 22.544px !important;
+    /* padding: 0px 15px !important; */
     transition: all 300ms linear !important;
-    color: #0389ff !important;
+    color: var(--color-light-blue) !important;
+}
+
+.accordion-button:not(.collapsed) img {
+    display: block !important;
+    transform: translateY(23px);
+    margin-right: 10px;
+    width: 64px;
+    height: 64px;
 }
 
 .accordion {
@@ -654,7 +664,20 @@ nav div ul li a {
     background: #06F;
     filter: blur(100px);
     right: -10%;
-    bottom: -10%;
+    bottom: -20%;
+    z-index: 3;
+}
+
+.light-15 {
+    width: 433.455px;
+    height: 422.212px;
+    flex-shrink: 0;
+    border-radius: 433.455px;
+    opacity: 0.3;
+    background: #06F;
+    filter: blur(100px);
+    right: -10%;
+    top: -50%;
     z-index: 3;
 }
 
@@ -734,7 +757,7 @@ nav div ul li a {
 }
 
 .light-6 {
-    top: 30%;
+    top: 36%;
     right: 40%;
     width: 381.479px;
     height: 191px;
@@ -880,7 +903,7 @@ svg path {
     content: "";
     position: absolute;
     top: 0%;
-    width: 1500px;
+    width: 100%;
     opacity: .2;
     height: 1px;
     background-color: var(--color-white);
@@ -936,7 +959,7 @@ svg path {
 }
 
 .loader span {
-    font-size: 22px;
+    font-size: var(--fs-lg);
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
     animation: blur 3s linear infinite;
@@ -1123,6 +1146,10 @@ svg path {
     .border-box7 {
         border-bottom: transparent;
     }
+
+    .accordion-body {
+        padding: 0px 20px 35px 99px !important;
+    }
 }
 
 @media (min-width:992px) {
@@ -1159,6 +1186,10 @@ svg path {
 
     .border-box7 {
         border-bottom: transparent;
+    }
+
+    .accordion-body {
+        padding: 0px 50px 35px 99px !important;
     }
 }
 
@@ -1258,6 +1289,10 @@ svg path {
 
     .z_1 {
         z-index: -1;
+    }
+
+    .bg-header {
+        background-size: cover;
     }
 
     nav div ul {
