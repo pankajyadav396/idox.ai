@@ -206,6 +206,7 @@ nav div ul li a {
 }
 
 #menu span {
+    gap: 4px ;
     height: 4px;
     width: 25px;
     border-radius: 10px;
@@ -213,12 +214,12 @@ nav div ul li a {
     display: flex;
     position: relative;
     flex-direction: column;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     z-index: 3;
 }
 
 #menu {
-    right: 5%;
+    right: 0% !important;
     position: absolute;
     top: -4px;
 }
@@ -234,8 +235,8 @@ nav div ul li a {
 }
 
 .span2 {
-    rotate: -44deg;
-    top: -10px;
+    rotate: -47deg;
+    top: -8px;
     position: relative;
     transition: .4s;
 }
@@ -426,7 +427,7 @@ nav div ul li a {
 .accordion-item {
     margin-right: auto;
     margin-left: auto;
-    max-width: 531px;
+    width: 300px;
     border: none !important;
     border-radius: 10px !important;
     background: rgba(3, 137, 255, 0.12) !important;
@@ -440,6 +441,10 @@ nav div ul li a {
 
 .mh-550 {
     min-height: 550px;
+}
+
+.mh-590 {
+    min-height: 594px;
 }
 
 .accordion-body {
@@ -1059,9 +1064,7 @@ svg path {
         border-right: 1px solid #273139;
         border-bottom: transparent;
     }
-}
 
-@media (min-width:576px) {
     .arrow3 {
         position: absolute;
         right: unset;
@@ -1085,6 +1088,10 @@ svg path {
         height: 400px;
         bottom: -50%;
         left: 5%;
+    }
+
+    .accordion-item {
+        width: 531px;
     }
 }
 
@@ -1150,11 +1157,19 @@ svg path {
     .accordion-body {
         padding: 0px 20px 35px 99px !important;
     }
+
+    .accordion-item {
+        width: 370px;
+    }
 }
 
 @media (min-width:992px) {
     #menu {
         display: none;
+    }
+
+    .accordion-item {
+        width: 431px;
     }
 
     .border-box2 {
@@ -1209,6 +1224,10 @@ svg path {
         height: 570px;
         bottom: 5%;
         left: 0%;
+    }
+
+    .accordion-item {
+        width: 531px;
     }
 }
 
@@ -1275,11 +1294,11 @@ svg path {
         top: 0;
         position: fixed;
         z-index: 2;
-        width: 100%;
+        width: 350px;
         height: 100vh;
         right: -100%;
         transition: all 600ms;
-        background: var(--color-black);
+        background: rgba(0, 0, 0, .9);
     }
 
     .mobileView.show {
@@ -1315,6 +1334,10 @@ svg path {
         margin-top: -100px;
     }
 
+    .mh-590 {
+        min-height: 300px;
+    }
+
     .transform-img {
         transform: translateY(-110px) !important;
     }
@@ -1336,6 +1359,10 @@ svg path {
 @media (max-width:576px) {
     form {
         padding-left: 12px;
+    }
+
+    .bg-header {
+        min-height: 600px;
     }
 
     :root {
