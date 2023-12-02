@@ -148,7 +148,7 @@
 .bg-nav {
     border-bottom: 1px solid rgba(251, 253, 255, 0.20);
     background: rgba(251, 253, 255, 0.01);
-    /* backdrop-filter: blur(16.5px);    */
+    backdrop-filter: blur(16.5px);   
 }
 
 .bg-header {
@@ -206,7 +206,7 @@ nav div ul li a {
 }
 
 #menu span {
-    gap: 4px ;
+    gap: 4px;
     height: 4px;
     width: 25px;
     border-radius: 10px;
@@ -682,7 +682,7 @@ nav div ul li a {
     background: #06F;
     filter: blur(100px);
     right: -10%;
-    top: -50%;
+    top: -57%;
     z-index: 3;
 }
 
@@ -691,7 +691,7 @@ nav div ul li a {
     height: 570.212px;
     right: 0%;
     bottom: -20%;
-    z-index: 3;
+    z-index: 0;
 }
 
 .light-9 {
@@ -951,6 +951,36 @@ svg path {
     z-index: 2;
 }
 
+.mx-1380 {
+    max-width: 1380px;
+}
+
+.mx-209 {
+    max-width: 225px;
+}
+
+footer ul li a {
+    transition: all .3s;
+    position: relative;
+}
+
+footer ul li a::after {
+    content: '' !important;
+    position: absolute !important;
+    height: 3px;
+    width: 0;
+    background-color: var(--color-white) !important;
+    left: 0% !important;
+    bottom: -3px;
+    border-radius: 10px;
+    transition: 300ms linear;
+}
+
+footer ul li a:hover::after {
+    width: 100%;
+    left: 0%;
+}
+
 .footer-logo {
     width: 261.61px;
 }
@@ -995,6 +1025,10 @@ svg path {
     bottom: 20px;
     right: 20px;
     z-index: 7 !important;
+}
+
+.mt--3 {
+    margin-top: -18px;
 }
 
 .btn-top {
@@ -1093,6 +1127,10 @@ svg path {
     .accordion-item {
         width: 531px;
     }
+
+    form input {
+        width: 280px;
+    }
 }
 
 @media (min-width:768px) {
@@ -1153,7 +1191,6 @@ svg path {
     .border-box7 {
         border-bottom: transparent;
     }
-
     .accordion-body {
         padding: 0px 20px 35px 99px !important;
     }
@@ -1228,6 +1265,12 @@ svg path {
 
     .accordion-item {
         width: 531px;
+    }
+}
+
+@media (min-width:1285px) {
+    .justify-content-xxxl-center {
+        justify-content: center;
     }
 }
 
@@ -1322,7 +1365,6 @@ svg path {
     nav div ul li {
         padding-bottom: 16px;
         display: flex;
-        border-bottom: 1px solid var(--color-white);
         width: 200px;
         justify-content: center;
     }
