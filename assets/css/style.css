@@ -148,7 +148,7 @@
 .bg-nav {
     border-bottom: 1px solid rgba(251, 253, 255, 0.20);
     background: rgba(251, 253, 255, 0.01);
-    backdrop-filter: blur(16.5px);   
+    backdrop-filter: blur(16.5px);
 }
 
 .bg-header {
@@ -378,6 +378,27 @@ nav div ul li a {
     max-width: 524.24px;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--color-dark-blue3);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-light-blue);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-light-blue);
+}
+
 .lh-170 {
     line-height: 170%;
 }
@@ -444,7 +465,7 @@ nav div ul li a {
 }
 
 .mh-590 {
-    min-height: 594px;
+    min-height: 600px;
 }
 
 .accordion-body {
@@ -488,7 +509,7 @@ nav div ul li a {
     --bs-accordion-border-width: none !important;
     --bs-accordion-btn-focus-border-color: none !important;
     --bs-accordion-btn-focus-box-shadow: none !important;
-    --bs-accordion-active-color: #0389ff !important;
+    --bs-accordion-active-color: var(--color-light-blue) !important;
     --bs-accordion-active-padding-bottom: 7px !important;
 }
 
@@ -523,7 +544,7 @@ nav div ul li a {
 }
 
 .slider3 .slick-list .slick-track {
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 }
 
 .slider3 .slick-dots {
@@ -535,6 +556,7 @@ nav div ul li a {
 .slider3 .slick-dots li {
     width: 10px !important;
     height: 10px !important;
+    bottom: 40px;
     border-radius: 18px;
     background: var(--color-white);
     margin: 0 !important;
@@ -763,7 +785,7 @@ nav div ul li a {
 
 .light-6 {
     top: 36%;
-    right: 40%;
+    right: 34%;
     width: 381.479px;
     height: 191px;
     flex-shrink: 0;
@@ -1117,11 +1139,10 @@ footer ul li a:hover::after {
     }
 
     .light-1 {
-        position: absolute;
         width: 400px;
         height: 400px;
-        bottom: -50%;
-        left: 5%;
+        bottom: -20%;
+        left: -8%;
     }
 
     .accordion-item {
@@ -1191,6 +1212,7 @@ footer ul li a:hover::after {
     .border-box7 {
         border-bottom: transparent;
     }
+
     .accordion-body {
         padding: 0px 20px 35px 99px !important;
     }
@@ -1274,6 +1296,19 @@ footer ul li a:hover::after {
     }
 }
 
+@media (max-width:1400px) {
+    .position-linecol-4-3::after {
+        content: '';
+        position: absolute;
+        bottom: 70%;
+        right: 0%;
+        width: 1140px;
+        height: 1px;
+        background: #273139;
+        z-index: 2;
+    }
+}
+
 @media(max-width:1200px) {
     :root {
         /* font-size */
@@ -1339,13 +1374,13 @@ footer ul li a:hover::after {
         z-index: 2;
         width: 350px;
         height: 100vh;
-        right: -100%;
+        left: -100%;
         transition: all 600ms;
-        background: rgba(0, 0, 0, .9);
+        background: rgba(0, 0, 0,100);
     }
 
     .mobileView.show {
-        right: 0;
+        left: 0;
         height: 100vh;
     }
 
@@ -1362,7 +1397,11 @@ footer ul li a:hover::after {
         padding-left: 30px !important;
     }
 
-    nav div ul li {
+    .home {
+        margin-bottom: 50px;
+    }
+
+    nav div ul {
         padding-bottom: 16px;
         display: flex;
         width: 200px;
